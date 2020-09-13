@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/FoglioDiStile.css">
+    <title>Prenotazione</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/android-chrome-192x192.png">
+    <link rel="stylesheet" type="text/css" href="css/FoglioDiStile.css">
+    <meta name=”description” content=””/>
+    <meta name=”keywords” content=””/>
+    <!--  Fonte per le icone->    https://ionicons.com/  -->
+    <!--  Fonte per le immagini (copyright free)->  https://www.pexels.com/  --> 
+
+</head>
+
+
+<!--Inizio header-->
+<header>
+
+
+
+    <!--menu di navigazione-->
+    <nav>
+        <ul>
+            <li><input class="barraDiRicerca" type="search" placeholder="Cerca sul sito"><button class="bottoneRicerca"
+                    type="submit">Cerca</button></li>
+
+            <li><a href="./SchermataPrincipale.html">Home</a></li>
+            <li><a href="#">Entra nel sito<span style="font-size:8px">&nabla;</span></a>
+              <ul> 
+                <li><form action="/reindirizzamentoAccesso" method="GET">
+                  <button id="btnTrasparente" type="submit" style="margin-left:4%">
+                    <a style="color: black">Accedi</a>
+                  </button>
+                </form>
+               </li>
+                <li>
+                  <form action="/reindirizzamentoIscrizione" method="GET">
+                    <button id="btnTrasparente" type="submit"style="margin-left:4%;">
+                      <a style="color: black">Iscriviti</a>
+                    </button>
+                  </form>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="./Dove_siamo.html"
+                ><ion-icon name="locate"></ion-icon> Dove siamo</a
+              >
+            </li>
+            <li>
+              <a href="./Contatti.html"
+                ><ion-icon name="mail"></ion-icon> Contatti</a
+              >
+            </li>
+    
+    </ul>
+    </nav>
+    <!--Fine menu di navigazione-->
+
+    <!-- --
+   <div class="logoHeader" >
+    <img src="img/B&B_LOGO.jpg" alt="B&B Logo" height="180" width="180">    
+   </div>
+  !-- -->
+</header>
+<!--Fine header-->
+
+
+
+<body>
+
+
+    <div class="contenutoPannelli">
+
+        <h1>PANNELLO PRENOTAZIONE</h1>
+
+        <div class="modulo">
+            <form action="/calcoloTasse" method="POST">
+                <label for="numero_ospiti_adulti_p">Numero ospiti adulti</label>
+                <input type="number" name="numero_ospiti_adulti_p"  id="" />
+                <br />
+                <label for="numero_ospiti_bambini_p">Numero ospiti bambini</label>
+                <input type="number" name="numero_ospiti_bambini_p" id="" />
+                <br />
+                <label for="data_check_in_p">Data Check-In</label>
+                <input type="date" name="data_check_in_p" id="" />
+                <br />
+                <label for="data_check_out_p">Data Check-Out</label>
+                <input type="date" name="data_check_out_p" id="" />
+                <br />
+                <label for="animali_p">Presenza di animali?</label>
+                <input type="checkbox" name="animali_p" id="" />
+                <br />
+                <label for="disabilita_p">Uno degli ospiti è affetto da disabilità?</label>
+                <input type="checkbox" name="disabilita_p" id="" />
+                <br />
+                <label for="viaggio_lavoro_p">Viaggio di lavoro?</label>
+                <input type="checkbox" name="viaggio_lavoro_p" id="" />
+                <br />
+                <br />
+                <br />
+                <button id="btnPannello" type="submit">Avanti</button>
+            </form>
+
+        </div>
+    </div>
+
+
+
+ <!--Inizio footer-->
+   
+ <footer>
+       
+    <div class="colonne-footer">    
+    
+      <div class="colonna-sinistra">
+          
+        <div class="footer-GEDAName">
+          <small>&copy;GEDA GROUP</small>
+        </div>
+       <br>
+        <!--logo footer-->
+  
+          <img id="logoFooter" src="img/B&B_LOGO.jpg" alt="B&B LOGO">
+  
+        </div>
+  
+    
+      <div class="colonna-centrale">
+        <div class="contatti">
+          <strong><h4>Contattaci:</h4></strong>
+          <p> <a href="mail@esempio.it">mail@esempio.it</a> </p>
+        </div>
+    
+       <div class="footer-infoSuDiNoi">
+         <span>
+          <p> 091 123456789 </p> 
+          <br><br>
+          <p>Dove trovarci:</p>
+          <br>
+          <p> Via Esempio n1 </p>
+        </span>
+        <strong><h4>Note legali</h4></strong>
+        </div>
+      </div>
+  
+    
+          <div class="colonna-destra">
+            <div class="icone-social">
+            <h4>Seguici</h4>
+            <a href="#"><i> <img src="img/Logo_FB.png" alt="Facebook" >  </i></a> 
+          <a href="#"><i><img src="img/Logo_IG.png" alt="Instagram">   </i></a>
+          <a href="#"><i><img src="img/Logo_whatsapp.png" alt="Whatsapp"> </i></a>
+        </div> 
+          </div>
+       
+        </div> 
+         
+      </footer>
+       <!--Fine footer-->
+  
+  
+   <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+  
+  
+  </body>
+  </html>

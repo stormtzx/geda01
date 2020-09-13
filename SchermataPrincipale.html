@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/FoglioDiStile.css">
+    <title>GEDA B&B</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/android-chrome-192x192.png">
+    <link rel="stylesheet" type="text/css" href="css/FoglioDiStile.css">
+    <meta name=”description” content=””/>
+    <meta name=”keywords” content=””/>
+    <!--  Fonte per le icone->    https://ionicons.com/  -->
+    <!--  Fonte per le immagini (copyright free)->  https://www.pexels.com/  --> 
+
+</head>
+
+
+  <!--Inizio header-->
+<header>
+  
+
+ <!--menu di navigazione-->
+ <nav>     
+  
+  <ul>
+    <div class="barraDiRicerca"> <li><input class="testo_nero" type="search" placeholder="Cerca nel sito"><button class="bottoneRicerca" type="submit">Cerca</button></li></div> 
+    
+    <li><a href="./SchermataPrincipale.html"><ion-icon name="home"></ion-icon> Home</a></li> 
+    <li><a href="#"><ion-icon name="log-in"></ion-icon>Entra nel sito<span style="font-size:8px">&nabla;</span></a>
+      <ul> 
+        <li><form action="/reindirizzamentoAccesso" method="GET">
+          <button id="btnTrasparente" type="submit" style="margin-left:4%">
+            <a style="color: black">Accedi</a>
+          </button>
+        </form>
+       </li>
+        <li>
+          <form action="/reindirizzamentoIscrizione" method="GET">
+            <button id="btnTrasparente" type="submit"style="margin-left:4%;">
+              <a style="color: black">Iscriviti</a>
+            </button>
+          </form>
+        </li>
+      </ul>
+    </li>
+    <li><a href="./Dove_siamo.html"><ion-icon name="locate"></ion-icon> Dove siamo</a></li>
+    <li><a href="./Contatti.html"><ion-icon name="mail"></ion-icon> Contatti</a></li>
+  </ul>
+  </nav>
+  
+   <!--Fine menu di navigazione-->
+ 
+   
+  <h1 id="benvenuto"  >BENVENUTO IN GEDA</h1>  
+</header>  
+     <!--Fine header-->
+
+<body>
+
+ 
+     <!--Inizio parte centrale della home -->
+   <div id="menu">
+
+  <img id="slide" >  
+
+
+     <div class="boxMenu"></div>  <!--NB:E' corretto che sia chiuso,boxMenu serve solo a disegnare il riquadro,il contenuto non deve essere figlio altrimenti eredita l'opacita-->
+       <div  class="contenutoBoxMenu">
+<h2>Cerca una struttura e prenota una stanza</h2>
+
+
+<div class="cercaCittà">
+  <form  action="/ricerca" method="POST">
+  <input class="testo_nero" type="text" name="citta_r" placeholder="cerca città"/>
+</div>
+
+  <br/>     
+  <div class="testo_nero">
+            <label for="check_in_r">Check In:</label>
+            <input type="date" class="testo_nero" id="data-in" name="check_in_r" placeholder="gg/mm/aaaa" /> 
+            <i class="icon_calendar"></i>
+        </div>
+       
+        <div class="testo_nero">
+            <label for="check_out_r">Check Out:</label>
+            <input type="date" class="testo_nero" id="data-out" name="check_out_r" placeholder="gg/mm/aaaa" />
+            <i class="icon_calendar"></i>
+        </div>
+     
+        <button class="button" type="submit">Cerca</button>
+       
+
+</form>
+
+<br /><br>
+<form action="/reindirizzamentoAccesso" method="GET">
+  <button class="button1" id="btnPannello" type="submit" style="margin-left:4%">
+    Accedi
+  </button>
+</form> <!--Fate più bello sto bottone-->
+<p>
+  <a  href="./SchermataRecuperoPassword.html">Ti sei dimenticato della password?</a>
+</p>
+
+<p>
+  Non hai un account?</p>
+  <form action="/reindirizzamentoIscrizione" method="GET">
+    <button class="button1" id="btnPannello" type="submit" style= "margin-left:4%">
+      Iscriviti
+    </button>
+  </form> <!--Fate più bello sto bottone-->
+ 
+
+
+
+
+</div>
+  </div>
+
+ 
+      
+     <!--Inizio script per lo  SlideShow  -->
+
+<script type="text/javascript">
+
+var immagini = ["img/Slide/room.jpg",
+"img/Slide/room2.jpg",
+"img/Slide/room3.jpeg"];
+  
+var i = 0;  
+var timer = 3000;
+
+
+function slideShow() {
+
+document.getElementById('slide').className += "fadeOut";
+
+//La funzione sposta in avanti l'indice dell'array per passare alla foto successiva
+
+setTimeout(function() {
+        document.getElementById('slide').src = immagini[i];
+        document.getElementById('slide').className = "";
+    },500);
+
+    i++;
+
+//document.getElementById('slide').src = immagini[i];
+
+if(i == immagini.length) {i = 0;}
+
+setTimeout("slideShow()", timer);
+ 
+}
+slideShow();
+
+ 
+
+  </script>
+        <!--Fine Script  per SlideShow -->
+
+
+
+<!--Inizio parte 2 home-->
+
+
+<div class="home2">
+  
+ 
+  <div id="box1">
+    <img src="img/home2/foto1.jpeg" alt="Home2_foto1" height="600" width="auto" >
+
+
+    <div class="descrizioneDestra">
+
+ <h1>Una struttura per ogni esigenza</h1>
+<p>Che sia per un viaggio di lavoro o per una vacanza,abbiamo il posto che fa per te.Dai un'occhiata alle nostre strutture e scegli quella che fa per te.</p>
+</div>
+
+</div>
+
+<hr>
+
+<div id="box2">
+
+  <img  src="img/home2/foto2.jpeg" alt="Home2_foto2" height="600" width="auto" >
+  
+</div>
+
+ 
+  <div class="descrizioneSinistra">
+
+   <h1>Un design unico</h1>
+  <p>Oltre a una vasta gamma di servizi a disposizione,le nostre strutture vantano un design unico nel suo genere,accoglienti e al tempo stesso eleganti.</p>
+  </div>
+
+
+   <hr>
+ 
+    <div id="box3">
+
+
+  <img src="img/home2/foto3.jpeg" alt="Home2_foto3"  height="600" width="auto" >
+ 
+  <div class="descrizioneDestra">
+
+  <h1 >Tutti i servizi di cui hai bisogno</h1>
+<p>Se hai una particolare esigenza,basta comunicarlo in fase di prenotazione.Hai bambini?Un cane?Nessun problema,le nostre strutture sono adeguate per ogni bisogno.</p>
+
+</div>
+</div>
+
+
+<hr>
+
+<div id="box4">
+
+  <img src="img/home2/foto4.jpeg" alt="Home2_foto4" height="600" width="auto" >
+</div>
+
+   <div class="descrizioneSinistra">
+
+  <h1 >Siamo a tua disposizione</h1>
+  <p>Per ogni evenienza puoi sempre contattarci tramite e-mail,numero di telefono,oppure ancora seguici sulle nostre pagine social.Visita la pagina  <a href="./Contatti.html">contatti</a> per maggiori informazioni</p>
+ 
+
+</div>
+
+
+
+     </div> 
+
+    </div> 
+
+  
+
+<!--fine parte 2 home-->
+
+
+ <!--Inizio footer-->
+   
+ <footer>
+       
+  <div class="colonne-footer">    
+  
+    <div class="colonna-sinistra">
+        
+      <div class="footer-GEDAName">
+        <small>&copy;GEDA GROUP</small>
+      </div>
+     <br>
+      <!--logo footer-->
+
+        <img id="logoFooter" src="img/B&B_LOGO.jpg" alt="B&B LOGO">
+
+      </div>
+
+  
+    <div class="colonna-centrale">
+      <div class="contatti">
+        <strong><h4>Contattaci:</h4></strong>
+        <p> <a href="mail@esempio.it">mail@esempio.it</a> </p>
+      </div>
+  
+     <div class="footer-infoSuDiNoi">
+       <span>
+        <p> 091 123456789 </p> 
+        <br><br>
+        <p>Dove trovarci:</p>
+        <br>
+        <p> Via Esempio n1 </p>
+      </span>
+      <strong><h4>Note legali</h4></strong>
+      </div>
+    </div>
+
+  
+        <div class="colonna-destra">
+          <div class="icone-social">
+          <h4>Seguici</h4>
+          <a href="#"><i> <img src="img/Logo_FB.png" alt="Facebook" >  </i></a> 
+          <a href="#"><i><img src="img/Logo_IG.png" alt="Instagram">   </i></a>
+          <a href="#"><i><img src="img/Logo_whatsapp.png" alt="Whatsapp"> </i></a>
+        </div> 
+        </div>
+     
+        
+    </footer>
+     <!--Fine footer-->
+
+
+ <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+
+</body>
+</html>
