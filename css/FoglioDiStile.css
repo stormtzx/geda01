@@ -1,0 +1,3784 @@
+
+ /*Impostazioni generali per la pagina*/
+ html {
+  min-height: 100%;
+  margin:0;
+  padding:0;
+  background-color: #292c2f;
+  font-family: 'Roboto', sans-serif;
+     
+  
+}
+
+body {
+min-height: 100%;
+margin:0;
+padding:0;
+font-family: 'Roboto', sans-serif;
+background-color: lightgrey;
+
+
+}
+
+
+.contenutoConferma {
+
+
+ background:lightgrey;
+padding-top: 4%;
+PADDING-bottom:4%;
+font-size:20px;
+
+}
+
+
+.contenutoConferma h1 {
+
+color:green;
+text-align:center;
+PADDING-bottom: 7%
+
+}
+
+.contenutoConferma p {
+
+ text-align:center;
+ 
+
+ }
+
+.contenutoConferma img {
+  align-content:center;
+display:block;
+margin: 0 auto ;
+height:200px;
+width:200px;
+
+}
+
+
+.contenutoErrore {
+
+text-align:center;
+ background:lightgrey;
+ padding-top: 4%;
+PADDING-bottom:4%;
+font-size:32px;
+
+
+}
+
+
+.contenutoErrore h1 {
+
+color:red;
+text-align:center;
+padding-top: 3%;
+
+
+}
+
+
+
+.contenutoErrore h3 {
+
+color:red;
+text-align:center;
+padding-top: 3%;
+
+
+ }
+
+ .contenutoErrore p {
+
+color:black;
+ } 
+
+ .contenutoErrore  p a {
+text-decoration:underline;
+color:gray;
+ } 
+ 
+.contenutoErrore img {
+
+align-content:center;
+display:block;
+margin: 0 auto ;
+height:200px;
+weight:200px;
+
+
+}
+
+.contenutoErrore .modulo {
+
+padding-top:5%;
+
+
+ }
+
+
+
+* {  /*Il body è con ogni carattere bianco*/
+  color: rgb(255, 255, 255)
+}
+
+header {
+color:white;
+opacity:0.9;
+border: none;
+  background-color: #292c2f;
+box-shadow: 6px 6px 8px black;
+color:black;
+
+}
+
+
+
+.testo_nero{
+  color: rgb(0, 0, 0)
+}
+
+.testo_centrale {
+  text-align: center;
+}
+
+
+
+#benvenuto {
+font-family:'Georgia';
+text-shadow:  1px 1px 3px black;
+font-weight: bold;
+font-size:36px;
+text-align:center;
+padding-bottom:1%;
+margin-bottom:2%;
+
+}
+
+
+/*regole di stile per la barra di navigazione*/
+nav {
+
+position: relative;
+  display: inline-block;
+/*border: 1px solid black;*/
+background-color: auto;
+padding-bottom:5%;
+ font-size:90%;
+color:black;
+
+
+/*possibilità di animazione-> animation: slideIN 1s ease-out; */
+}
+
+nav ul {
+position: relative;
+color:white;
+display: flex;
+flex: 1 1 auto;
+margin: 0;
+list-style-type: none;
+
+}
+nav ul li:not(:last-child) {
+margin-right: 10px;
+}
+
+nav ul li {
+border: 2px solid transparent;
+border-radius: 5px;
+padding: 10px;
+transition: background 0.2s;
+height:18px;
+}
+nav ul li a {
+color: rgb(0, 0, 0);
+text-decoration: none;
+text-transform: uppercase;
+transition: color 0.4s;
+
+}
+nav ul li ul {
+visibility: hidden;
+opacity: 0;
+position: absolute;
+display: block;
+margin: 12px -12px;
+width: 144px;
+padding: 0;
+background: lightgray;
+border: 2px 1px 1px solid #000000;
+border-right: 1px solid #000000;
+border-bottom: 1px solid #000000;
+border-radius: 5px;
+transition: opacity 0.2s, visibility 0.2s;
+}
+nav ul li ul li {
+margin: -2px 0 0 -1px;
+width: calc(100% - 22px);
+line-height: 1.7;
+}
+nav ul li ul li a {
+color: rgb(0, 0, 0);
+}
+nav ul li:hover {
+background: orange;
+border: 2px solid orange;
+border-right: 2px solid orange;
+border-bottom: 2px solid orange;
+}
+nav ul li:hover a {
+color: gray;
+}
+nav ul li:hover ul {
+visibility: visible;
+opacity: 1;
+box-shadow: 0px 2px 2px 2px orange;
+}
+nav ul li:hover ul li a {
+color: black;
+}
+
+.barraDiRicerca {
+
+position:relative;
+margin-left:-2%;
+color: black;
+ 
+}
+
+nav .bottoneRicerca {
+  
+  position:relative;
+  margin-right:5px; 
+  margin-left:5px; 
+  border-color:orange;
+  box-shadow: #000000;
+  color: black;
+  text-decoration: none;
+  width: 80px;
+   
+}
+
+/*Regole di stile per il menu chekIn/checkOut*/
+
+#menu { /* ovvero  ciò che contiene slideshow e menu prenotazione checkin e checkout */
+
+position:relative;
+ 
+ 
+}
+
+/*regole di stile per lo slideshow */
+
+#slide {
+position:relative;
+ width: 100%;
+ height: 100%;
+ margin-top:-2%;
+ margin-bottom:-2%;
+ -webkit-transition: all 0.5s ease-out;
+ -moz-transition: left 0.5s ease-out;
+ -o-transition: left 0.5s ease-out;
+ transition: left 0.5s ease-out;
+ transition:opacity 0.5s;
+
+
+}
+
+
+
+
+#slide.fadeOut {
+
+opacity:0;
+
+}
+
+.boxMenu {
+  
+position:absolute;
+top:10%;
+right:8%;
+width: 35%;
+height:80%;
+background-color: #292c2f;
+box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+box-sizing: border-box;
+opacity: 0.6;
+}
+
+.contenutoBoxMenu {
+opacity: 100%;
+box-sizing: border-box;
+position:absolute;
+top:12%;
+right:5%;
+width: 35%;
+height:80%;
+
+}
+
+.contenutoBoxMenu h2 {
+
+margin-left: -5%;
+padding-right:5%;
+
+} 
+
+
+
+.contenutoBoxMenu form {
+
+padding-top:5%;
+padding-bottom:5%;
+}
+
+.contenutoBoxMenu input {
+
+position:relative;
+border-radius:6px;
+width: 35%;
+height:80%;
+padding-left:5%;
+font-size:16px;
+
+}
+
+
+
+.contenutoBoxMenu button {
+background-color: black;
+border: solid 0.5px black;
+color: white;
+text-align: center;
+text-decoration: none;
+display: block;
+font-size: 10px;
+cursor: pointer;
+border-radius: 4px;
+position:relative;
+margin-top:5%;
+left:15%;
+width: 35%;
+height: 5%;
+
+}
+
+
+.contenutoBoxMenu button:hover {
+
+color:orange;
+
+}
+
+
+
+.contenutoBoxMenu .cercaCittà input {
+position:relative;
+width: 35%;
+height:80%;
+
+}
+
+
+
+/*da qui in poi le regole di stile per la parte secondaria della home*/
+
+.home2 {
+
+position:relative;
+display:block;
+padding-bottom:10%;
+ padding-left:0%;
+ border-top:5px solid black;
+ background: lightgray;
+margin-bottom:-5%;
+
+}
+
+
+
+#box1  {
+padding-top:2%;
+padding-left:5%;
+padding-bottom:30%; 
+
+}
+
+
+
+#box1 img {
+
+border:1px solid black;
+width: 25%;
+height: 20%;
+
+}
+
+/*
+@keyframes example {
+
+0% { left:0px; top:0px;}
+50% { left:50px; top:50px;}
+100% { left:100px; top:100px;}
+
+}
+
+*/
+
+.descrizioneDestra {
+
+position:relative;
+padding-left:33%;
+margin-top:-30%; 
+animation-name: example;
+animation-duration: 2s;
+
+}
+
+
+.descrizioneSinistra {
+
+position: relative;
+padding-right:35%;
+text-align: right;
+padding-bottom:25%;
+margin-top:-35%; 
+
+}
+
+.descrizioneSinistra p {
+
+color:black;
+
+}
+
+
+
+.descrizioneDestra p {
+
+color:black;
+
+
+}
+
+
+
+@keyframes test {
+
+25% {fill: gray}
+50% {fill: gray}
+75% {fill: gray}
+100% {fill: gray}
+
+}
+   
+
+
+.descrizioneSinistra h1 {
+
+color:black;
+text-shadow:  1px 1px 3px 3px rgb(0, 0, 0);
+}
+
+.descrizioneDestra h1 {
+
+color:black;
+text-shadow:  1px 1px 3px 3px rgb(0, 0, 0);
+
+}
+
+
+#box2  {
+padding-top: 3%;
+padding-left: 72%;
+padding-bottom:5%; 
+}
+
+#box2 img {
+
+ border:1px solid black;
+ width: 85%;
+ height: auto;
+
+
+}
+
+
+
+#box3   {
+  padding-top:3%;
+  padding-left:5%;
+  padding-bottom:30%;   
+}
+
+#box3 img {
+ 
+border:1px solid black;
+width: 25%;
+height: 60%;
+
+}
+
+
+
+#box4    {
+  padding-left: 72%;
+  padding-top: 3%;
+
+}
+
+#box4 img {
+ 
+  border:1px solid black;
+  width: 85%;
+  height: 90%;
+
+}
+ 
+
+
+#box1:hover {
+
+  background-color:gray;
+  transition: all 0.3s ease-in 0.3s
+  }
+ 
+  #box2:hover {
+   
+   background-color:gray;
+   transition: all 0.3s ease-in 0.3s
+   }
+ 
+   #box3:hover {
+   
+     background-color:gray;
+     transition: all 0.3s ease-in 0.3s
+     }
+ 
+     #box4:hover {
+   
+       background-color:gray;
+       transition: all 0.3s ease-in 0.3s
+       }
+
+/*regole di stile per il footer*/
+
+footer{
+position: relative;
+bottom: 0;
+color:white;
+
+}
+.colonne-footer{
+background-color: #292c2f;
+box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+box-sizing: border-box;
+width: 100%;
+text-align: left;
+font: bold 16px sans-serif;
+padding: 2% 2%;
+
+}
+
+#logoFooter {
+display: inline-block;
+position: relative;
+top: -5%;
+ border-radius: 6px;
+}
+
+#logoFooter {
+width: 55%;
+HEIGHT:40%;
+
+}
+
+.colonne-footer .colonna-sinistra,
+.colonne-footer .colonna-centrale,
+.colonne-footer .colonna-destra{
+display: inline-block;
+vertical-align: top;
+}
+
+.colonne-footer .colonna-sinistra{
+width: 30%;
+}
+
+.colonne-footer h3{
+color:  #ffffff;
+font: normal 36px 'Cookie', cursive;
+margin: 0;
+}
+
+.colonne-footer h3 span{
+color:  rgba(138, 125, 125, 0.947);
+}
+
+
+.colonne-footer .footer-links{
+color:  #ffffff;
+margin: 5% 0 3%;
+padding: 0;
+ 
+}
+
+.colonne-footer .footer-links a{
+display:inline-block;
+line-height: 1.8;
+text-decoration: none;
+color:  inherit;
+
+
+}
+
+.colonne-footer .footer-GEDAName{
+color:  #8f9296;
+font-size: 14px;
+font-weight: normal;
+margin: 0;
+}
+
+
+.colonne-footer .colonna-centrale{
+
+width: 30%;
+margin-left:4%;
+
+}
+
+.colonne-footer .colonna-centrale i{
+background-color:  #33383b;
+color: #ffffff;
+font-size: 25px;
+width: 15%;
+height: 20%;
+border-radius: 50%;
+text-align: center;
+line-height: 5%;
+margin: 3% 4%;
+vertical-align: middle;
+}
+
+.colonne-footer .colonna-centrale i.contatti{
+font-size: 17px;
+line-height: 38px;
+}
+
+.colonne-footer .colonna-centrale p{
+display: inline-block;
+color: #ffffff;
+vertical-align: middle;
+margin:0;
+}
+
+.colonne-footer .colonna-centrale p span{
+display:block;
+font-weight: normal;
+font-size:14px;
+line-height:2;
+}
+
+.colonne-footer .colonna-centrale p a{
+color:  rgba(135, 132, 132, 0.947);
+text-decoration: none;;
+}
+
+.colonne-footer .colonna-destra{
+width: 33%;
+  
+}
+
+.colonne-footer .footer-infoSuDiNoi{
+line-height: 20px;
+color:  #92999f;
+font-size: 13px;
+font-weight: normal;
+margin: 0;
+}
+
+.colonne-footer .footer-infoSuDiNoi span{
+display: block;
+color:  #ffffff;
+font-size: 14px;
+font-weight: bold;
+margin-bottom: 5%;
+}
+
+.colonne-footer .icone-social{
+margin-top: 5%;
+margin-left:40%;
+}
+
+.colonne-footer .icone-social a{
+display: block;
+width: 3%;
+height: 3%;
+cursor: pointer;
+background-color:  #33383b;
+border-radius: 2px;
+
+font-size: 20px;
+color: #ffffff;
+text-align: center;
+line-height: 35px;
+
+margin-right: 3px;
+margin-bottom: 5px;
+}
+
+
+.colonne-footer .icone-social img {
+
+height: 30px;
+width:30px;
+
+}
+
+
+/*Stile per il riquadro della mappa della pagina "Dove siamo"*/
+
+#paginaMappa  {
+
+  text-align:center;
+  align-content:center;
+  display: block;background-color:lightgray;
+ padding: top 3%;
+ padding-bottom:5%;
+}
+
+#paginaMappa h1 {
+text-align:center;
+padding-top:1%;
+
+color:black;
+
+}
+
+#paginaMappa p {
+text-align:center;
+align-content:center;
+display: block;
+ color:black;
+
+}
+
+#mappa {
+
+  text-align:center;
+  align-content:center;
+  display: block;
+position:relative;
+ border: solid 5px black;
+ width:800px;
+ height:660px;
+ margin-left:20%;
+ margin-right:20%;
+ }
+
+iframe {
+   text-align:center;
+  align-content:center;
+  display: block;
+ 
+ width:800px;
+  height:660px;
+}
+
+
+/*Regole di stile per la pagina dei contatti*/
+
+#paginaContatti {
+background:lightgray;
+padding-top:1%;
+
+
+}
+
+#paginaContatti h1 {
+
+color:black;
+text-align:center;
+font-size:32px;
+font-weight: bold;
+font-family:'Georgia';
+padding-top:3%;
+text-shadow: 1px 1px 3px black;
+
+}
+
+#paginaContatti ion-icon {
+
+ color:black;
+font-size:42px;
+
+
+}
+
+#contattiSocial {
+
+display:block;
+align-content: center;
+padding-left:8%;
+ padding-bottom: 12%;
+margin-left:16%;
+
+
+}
+
+#contattiSocial ion-icon {
+color:black;
+font-size:48px;
+padding-right:3%;
+padding-left:12%;
+padding-top:3%;
+
+}
+
+#paginaContatti ul {
+margin-left:10%;
+
+}
+
+
+#paginaContatti ul li {
+
+ color:black;
+font-size:24px;
+text-align:left;
+letter-spacing:1px;
+padding-left:0.5%;
+padding-top:1%;
+padding-bottom:1%;
+
+}
+#paginaContatti ul li a {
+
+color:gray;
+font-size:24px;
+text-align:left;
+letter-spacing:1px;
+padding-top:1%;
+padding-bottom:1%;
+
+}
+
+#paginaContatti a {
+
+color:black;
+font-size:16px;
+text-align:left;
+letter-spacing:1px;
+padding-left:0.5%;
+padding-top:1%;
+padding-bottom:1%;
+
+}
+
+
+/*Stile per i contenuti delle varie pagine di tipo: iscrizione,accesso e visualizzazione dati.
+Tutti questi si troveranno all'interno della classe "contenutopannelli" e spesso dentro il div
+"modulo"*/
+
+
+.contenutoPannelli {
+
+
+color: black;
+background-color:lightgray;
+  padding-bottom:10%;
+ padding-right: 10%;
+ padding-top:5%;
+ align-items: center;
+ align-content: center;
+ text-align: center;
+ display: block;
+
+}
+
+
+.contenutoPannelli .modulo  {
+
+display: flex;
+flex-direction: column;
+align-items: center;
+color: black;
+   background-color: rgb(85, 85, 85);
+   margin-left:35%;
+   margin-top:5%;
+   padding-bottom:2%;
+   padding-top:2%;
+   padding-left:7%;
+   padding-right: 7%;
+  width: 30%;
+ height:120%;
+border: medium solid black;
+font-family:'Roboto', sans-serif; ;
+color: black;
+border-radius: 10px;
+box-shadow: 0 0.6px 0.6px rgba(128, 128, 128, 0.109),
+  0 4px 4px rgba(128, 128, 128, 0.155),
+  0 6.1px 6.1px rgba(128, 128, 128, 0.195),
+  0 5.4px 5.4px rgba(128, 128, 128, 0.241),
+  0 14px 14px rgba(128, 128, 128, 0.35);
+
+}
+
+
+.contenutoPannelli h1 {
+
+color: orangered;
+padding-top:15px;
+font-family:'Verdana';
+text-shadow:  1px 1px 3px black;
+font-weight: bold;
+ text-align:center;
+padding-left:14%;
+
+}
+
+.contenutoPannelli  p {
+
+  color:black;
+  text-align:center;
+  display: block;
+
+
+}
+
+.contenutoPannelli .modulo h1 {
+padding-left:0%;
+}
+
+.contenutoPannelli h2 {
+
+
+padding-left:3%;
+padding-right:3%;
+
+}
+.contenutoPannelli h3 {
+
+padding-left:3%;
+padding-right:3%;
+
+}
+
+.contenutoPannelli input {
+
+margin-top:5%;
+margin-bottom:5%;
+}
+
+#numStelle {
+
+width:40px; 
+color:black;
+}
+
+#boxCommento {
+
+padding-bottom:100px;
+width:100%;
+color:black;
+word-wrap: break-word;
+
+}
+
+#btnPannello {
+
+   color:black;
+border-color: solid black; 
+background-color: orange;
+border-radius: 6px;
+margin-top:4%;
+margin-left:35%;
+width:100px;
+} 
+
+#btnTrasparente {
+
+background-color:transparent;
+border-color:transparent;
+box-shadow:transparent;
+color:orange;
+font-size:16px;
+height: 25px;
+ width: auto; 
+outline: none;
+}
+
+#btnTrasparente:hover {
+outline: none;
+cursor: pointer;
+ border:0px;
+
+}
+
+#btnTrasparente:active {
+outline: none;
+cursor: pointer;
+border:0px;
+}
+
+.boxDescrizione {
+ width: 400px;
+ height: 150px;
+}
+
+
+#riquadroFotoCasa {
+
+height: 400px;
+width:  400px; 
+
+}
+
+
+/*   QUi di seguito il codice per personalizzare l'input validation con delle icone
+
+input:required:invalid,
+input:focus:invalid
+{
+background-image: url(/images/form_validation.png);
+background-position: right bottom;
+background-repeat: no-repeat;
+}
+input:required:valid
+{
+background-image: url(/images/form_validation.png);
+background-position: right top;
+background-repeat: no-repeat;
+}
+
+*/
+
+/*
+.modulo label {
+color:yellow;
+
+  margin-top: 5%;
+  margin-left: -10%;
+  padding-left: 10%;
+}
+
+
+
+.modulo input {
+color:black;
+
+  margin-top: 5%;
+  margin-bottom: 3%;
+  
+}
+
+.bottoneIscrizione {
+
+  width:100%;
+  margin: 3% 0% 5% 0%;
+  padding-left:50%;
+}
+
+
+*/
+
+
+.btnLogout:hover, .btnLogout:visited {
+color: gray;
+background-color: orange;
+text-decoration: none;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+/*immagini*/
+
+.hero-image1 {
+  background-image: url(https://images.wallpaperscraft.com/image/tourist_cliff_sky_rock_freedom_113926_2560x1080.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+  height: 900px;
+  width: 50%;
+  text-align: center; 
+  
+}
+
+.hero-text1 {
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  color: white;
+  text-decoration: none;
+}
+
+.hero-image2 {
+  background-image: url(https://c1.wallpaperflare.com/preview/661/326/378/black-business-desk-diary.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: right;
+  height: 900px;
+  width: 50%;
+  text-align: center; 
+}
+
+.hero-text2 {
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  color: white;
+  text-decoration: none;
+}
+
+.hero-image3 {
+  background-image: url(https://images.pexels.com/photos/2577274/pexels-photo-2577274.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+  height: 900px;
+  width: 50%;
+  max-zoom: 100%;
+  text-align: center;
+ 
+}
+
+.hero-image4 {
+  background-image: url(https://images.pexels.com/photos/7357/startup-photos.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: right;
+  height: 900px;
+  width: 50%;
+  text-align: center;
+}
+
+
+/*bottoni link*/
+
+
+.button1 {
+background-color: lightcyan;
+border: solid black;
+color: white;
+padding: 1% 3%;
+text-align: center;
+text-decoration: none;
+display: block;
+font-size: 8px;
+cursor: pointer;
+border-radius: 4px;
+width: 40%;
+margin-top: 45%;
+margin-left: 28%;
+margin-right: 22%;
+
+}
+
+.button1:hover {
+color: gray;
+background-color: orange;
+text-decoration: none;
+}
+
+.button3 {
+background-color: lightcyan;
+border: solid black;
+color: white;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+display: block;
+font-size: 8px;
+cursor: pointer;
+border-radius: 4px;
+width: 40%;
+margin-top: 45%;
+margin-left: 33.5%;
+margin-right: 22%;
+
+}
+
+.button3:hover {
+color: gray;
+background-color: orange;
+text-decoration: none;
+}
+
+.button2 {
+background-color: transparent;
+border: solid black;
+color: white;
+text-align: center;
+text-decoration: none;
+display: block;
+font-size: 10px;
+cursor: pointer;
+border-radius: 4px;
+height: 30px;
+width: 60px;
+margin-left: 1%;
+margin-right: 1%;
+
+}
+
+.button2:hover, .button1:visited {
+color: gray;
+background-color: orange;
+text-decoration: none;
+}
+
+.top {
+margin: 20px 20px 0px 20px;
+padding: 10px;
+border: 5px solid #ccc;
+background: #665;
+height: 100px; /* ie5win fudge begins */
+voice-family: "\"}\"";
+voice-family:inherit;
+height: 70px;
+}
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+/* rendo il menù responsivo per adattarlo ai dispositivi più piccoli, fino ad una certa risoluzione massima */
+/*Si impostano 3 tipologie di dimensioni: 
+smartphone (min-width: 480px) --- tablet (max-width:768px) --- desktop (max-width:990px) */
+
+
+@media screen and (max-width: 990px) {
+
+
+#benvenuto {
+font-family:'Georgia';
+text-shadow:  1px 1px 3px black;
+font-weight: bold;
+font-size:26px;
+text-align:center;
+padding-bottom:1%;
+margin-bottom:3%;
+
+}
+
+header {
+  color:white;
+  opacity:0.9;
+  border: none;
+    background-color: #292c2f;
+  box-shadow: 6px 6px 8px black;
+  color:black;
+
+ }
+
+
+/*regole di stile per la barra di navigazione*/
+nav {
+
+position: relative;
+  display: inline-block;
+/*border: 1px solid black;*/
+background-color: auto;
+padding-bottom:5%;
+ font-size:70%;
+ color:black;
+
+
+/*possibilità di animazione-> animation: slideIN 1s ease-out; */
+}
+
+nav ul {
+position: relative;
+color:white;
+display: flex;
+flex: 1 1 auto;
+margin: 0;
+list-style-type: none;
+
+}
+nav ul li:not(:last-child) {
+margin-right: 10px;
+}
+
+nav ul li {
+border: 2px solid transparent;
+border-radius: 5px;
+ transition: background 0.2s;
+height:14px;
+ padding-right:-5%;
+}
+nav ul li a {
+color: rgb(0, 0, 0);
+text-decoration: none;
+text-transform: uppercase;
+transition: color 0.4s;
+
+}
+nav ul li ul {
+visibility: hidden;
+opacity: 0;
+position: absolute;
+display: block;
+margin: 12px -12px;
+width: 112px;
+padding: 0;
+background: lightgray;
+border: 2px 1px 1px solid #000000;
+border-right: 1px solid #000000;
+border-bottom: 1px solid #000000;
+border-radius: 5px;
+transition: opacity 0.2s, visibility 0.2s;
+}
+nav ul li ul li {
+margin: -2px 0 0 -1px;
+width: calc(100% - 22px);
+line-height: 1.7;
+}
+nav ul li ul li a {
+color: rgb(0, 0, 0);
+}
+nav ul li:hover {
+ background: orange;
+border: 2px solid orange;
+border-right: 2px solid orange;
+border-bottom: 2px solid orange;
+}
+nav ul li:hover a {
+color: gray;
+}
+nav ul li:hover ul {
+visibility: visible;
+opacity: 1;
+box-shadow: 0px 2px 2px 2px orange;
+}
+nav ul li:hover ul li a {
+color: black;
+}
+
+.barraDiRicerca  { 
+
+align-content:right;
+text-align:right;
+margin-left:-10%;
+
+}
+
+
+nav .barraDiRicerca button {
+
+  position:relative;
+  margin-right:5px; 
+  margin-left:5px; 
+  border-color:orange;
+  box-shadow: #000000;
+  color: black;
+  text-decoration: none;
+  width: 40%;
+   font-size:60%;
+
+
+ }
+
+.barraDiRicerca  input  {
+ font-size:60%;
+ width: 60%;    
+ }
+
+
+.hero-image1 { 
+
+  height: 750px;
+  width: 50%;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+
+}
+
+.hero-image2 { 
+  
+  height: 750px;
+  width: 50%;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+}
+
+
+.hero-image3 { 
+
+  height: 750px;
+  width: 50%;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+}
+
+
+.hero-image4 { 
+
+  height: 750px;
+  width: 50%;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+}
+
+
+.hero-text1 {
+
+  font-size: 12px;
+} 
+
+.hero-text2 {
+
+  font-size: 12px;
+} 
+
+.hero-text3 {
+
+  font-size: 12px;
+} 
+
+.hero-text4 {
+
+  font-size: 12px;
+} 
+
+
+
+#slide {
+  position:relative;
+   width: 100%;
+   height: 100%;
+   margin-top:-3%;
+   margin-bottom:-2%;
+
+} 
+
+#menu{
+  position: relative;
+ 
+}
+
+
+.boxMenu {
+  
+position:absolute;
+top:10%;
+right:8%;
+width: 35%;
+height:80%;
+background-color: #292c2f;
+box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+box-sizing: border-box;
+opacity: 0.6;
+}
+
+
+.contenutoBoxMenu p {
+
+font-size:8px;
+
+}
+
+.contenutoBoxMenu a {
+font-size:7px;
+margin-bottom: 7px;
+margin-top: 3px;
+
+}
+
+.contenutoBoxMenu h1 {
+
+font-size:12px;
+
+
+}
+
+.contenutoBoxMenu h2 {
+font-size: 10px;
+
+margin-left: -5%;
+padding-right:5%;
+}
+
+.contenutoBoxMenu form {
+font-size: 7px;
+
+
+padding-top:5%;
+padding-bottom:5%;
+}
+
+.contenutoBoxMenu label {
+font-size: 7px;
+}
+
+.contenutoBoxMenu input {
+font-size: 7px;
+
+position:relative;
+border-radius:6px;
+width: 35%;
+height:80%;
+padding-left:5%;
+font-size:16px;
+
+
+}
+
+.contenutoBoxMenu button {
+font-size: 7px;
+
+background-color: black;
+border: solid 0.5px black;
+color: white;
+text-align: center;
+text-decoration: none;
+display: block;
+font-size: 10px;
+cursor: pointer;
+border-radius: 4px;
+position:relative;
+margin-top:5%;
+left:15%;
+width: 35%;
+height: 5%;
+
+}
+
+.contenutoBoxMenu .cercaCittà {
+margin-bottom: 3px;
+left:15%;
+width: 35%;
+height: 5%;
+
+}
+
+.contenutoBoxMenu .button1 {
+font-size: 7px;
+}
+
+
+.descrizioneSinistra p {
+
+color:black;
+font-size:18px;
+
+
+}
+
+.descrizioneDestra p {
+
+color:black;
+font-size:18px;
+
+}
+
+
+.descrizioneSinistra h1 {
+
+color:black;
+text-shadow:  1px 1px 3px 3px rgb(0, 0, 0);
+font-size:20px;
+
+}
+
+.descrizioneDestra h1 {
+
+color:black;
+text-shadow:  1px 1px 3px 3px rgb(0, 0, 0);
+font-size:20px;
+
+
+}
+
+.contenutoConferma {
+
+
+background:lightgrey;
+padding-top: 8%;
+PADDING-bottom:10%;
+font-size:18px;
+
+}
+
+
+.contenutoConferma h1 {
+
+color:green;
+text-align:center;
+PADDING-bottom: 7%
+
+}
+
+.contenutoConferma p {
+
+text-align:center;
+
+}
+
+.contenutoConferma img {
+ align-content:center;
+display:block;
+margin: 0 auto ;
+height:190px;
+width:190px;
+
+
+}
+
+
+.contenutoErrore {
+
+text-align:center;
+background:lightgrey;
+padding-top: 4%;
+PADDING-bottom:4%;
+font-size:26px;
+
+
+}
+
+
+.contenutoErrore h1 {
+
+color:red;
+text-align:center;
+padding-top: 3%;
+
+
+}
+
+
+
+.contenutoErrore h3 {
+
+color:red;
+text-align:center;
+padding-top: 3%;
+
+
+}
+
+.contenutoErrore p {
+
+color:black;
+} 
+
+.contenutoErrore  p a {
+text-decoration:underline;
+color:gray;
+} 
+
+.contenutoErrore img {
+
+align-content:center;
+display:block;
+margin: 0 auto ;
+height:190px;
+width:190px;
+
+}
+
+
+
+
+
+#paginaContatti {
+background:lightgray;
+padding-top:1%;
+padding-bottom:10%;
+
+}
+
+#paginaContatti h1 {
+
+color:black;
+text-align:center;
+font-size:26px;
+font-weight: bold;
+font-family:'Georgia';
+padding-top:5%;
+text-shadow: 1px 1px 3px black;
+
+}
+
+#paginaContatti ion-icon {
+
+  color:black;
+ font-size:36px;
+  
+
+}
+
+#contattiSocial {
+
+ display:block;
+ align-content: center;
+ padding-left:8%;
+  padding-bottom: 12%;
+ margin-left:14%;
+ 
+
+}
+
+#contattiSocial ion-icon {
+color:black;
+font-size:42px;
+padding-right:3%;
+padding-left:10%;
+padding-top:3%;
+
+
+}
+
+#paginaContatti ul {
+ margin-left:10%;
+ 
+}
+
+
+#paginaContatti ul li {
+
+  color:black;
+ font-size:20px;
+text-align:left;
+letter-spacing:0.8px;
+padding-left:0.5%;
+padding-top:1%;
+padding-bottom:1%;
+
+}
+#paginaContatti ul li a {
+
+ color:gray;
+font-size:20px;
+text-align:left;
+letter-spacing:0.8px;
+padding-top:1%;
+padding-bottom:1%;
+
+}
+
+#paginaContatti a {
+
+ color:black;
+ font-size:12px;
+text-align:left;
+letter-spacing:0.8px;
+padding-left:0.5%;
+padding-top:1%;
+padding-bottom:1%;
+
+}
+
+
+
+/*Regole di stile per il riquadro della mappa della pagina "Dove siamo"*/
+
+#paginaMappa  {
+
+  text-align:center;
+  align-content:center;
+  display: block;background-color:lightgray;
+ padding: top 3%;
+ padding-bottom:5%;
+}
+
+#paginaMappa h1 {
+text-align:center;
+padding-top:1%;
+
+color:black;
+
+}
+
+#paginaMappa p {
+text-align:center;
+align-content:center;
+display: block;
+ color:black;
+
+}
+
+#mappa {
+
+  text-align:center;
+  align-content:center;
+  display: block;
+position:relative;
+ border: solid 5px black;
+ width:600px;
+ height:460px;
+ margin-left:18%;
+ margin-right:18%;
+ }
+
+iframe {
+   text-align:center;
+  align-content:center;
+  display: block;
+ 
+  width:600px;
+  height:460px;
+}
+
+
+footer{
+position: relative;
+bottom: 0;
+color:white;
+font-size:80%;
+
+}
+.colonne-footer{
+background-color: #292c2f;
+box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+box-sizing: border-box;
+width: 100%;
+text-align: left;
+font: bold 12px sans-serif;
+padding: 2% 2%;
+
+}
+
+#logoFooter {
+display: inline-block;
+position: relative;
+top: -5%;
+ border-radius: 6px;
+}
+
+#logoFooter {
+width: 55%;
+HEIGHT:40%;
+
+}
+
+.colonne-footer .colonna-sinistra,
+.colonne-footer .colonna-centrale,
+.colonne-footer .colonna-destra{
+display: inline-block;
+vertical-align: top;
+}
+
+.colonne-footer .colonna-sinistra{
+width: 30%;
+}
+
+.colonne-footer h3{
+color:  #ffffff;
+font: normal 30px 'Cookie', cursive;
+margin: 0;
+}
+
+.colonne-footer h3 span{
+color:  rgba(138, 125, 125, 0.947);
+}
+
+
+.colonne-footer .footer-links{
+color:  #ffffff;
+margin: 5% 0 3%;
+padding: 0;
+ 
+}
+
+.colonne-footer .footer-links a{
+display:inline-block;
+line-height: 1.8;
+text-decoration: none;
+color:  inherit;
+
+
+}
+
+.colonne-footer .footer-GEDAName{
+color:  #8f9296;
+font-size: 10px;
+font-weight: normal;
+margin: 0;
+}
+
+
+.colonne-footer .colonna-centrale{
+
+width: 30%;
+margin-left:4%;
+
+}
+
+.colonne-footer .colonna-centrale i{
+background-color:  #33383b;
+color: #ffffff;
+font-size: 20px;
+width: 15%;
+height: 20%;
+border-radius: 50%;
+text-align: center;
+line-height: 5%;
+margin: 3% 4%;
+vertical-align: middle;
+}
+
+.colonne-footer .colonna-centrale i.contatti{
+font-size: 12px;
+line-height: 30px;
+}
+
+.colonne-footer .colonna-centrale p{
+display: inline-block;
+color: #ffffff;
+vertical-align: middle;
+margin:0;
+}
+
+.colonne-footer .colonna-centrale p span{
+display:block;
+font-weight: normal;
+font-size:10px;
+line-height:2;
+}
+
+.colonne-footer .colonna-centrale p a{
+color:  rgba(135, 132, 132, 0.947);
+text-decoration: none;;
+}
+
+.colonne-footer .colonna-destra{
+width: 33%;
+  
+}
+
+.colonne-footer .footer-infoSuDiNoi{
+line-height: 20px;
+color:  #92999f;
+font-size: 7px;
+font-weight: normal;
+margin: 0;
+}
+
+.colonne-footer .footer-infoSuDiNoi span{
+display: block;
+color:  #ffffff;
+font-size: 10px;
+font-weight: bold;
+margin-bottom: 5%;
+}
+
+.colonne-footer .icone-social{
+margin-top: 5%;
+margin-left:40%;
+}
+
+.colonne-footer .icone-social a{
+display: block;
+width: 3%;
+height: 3%;
+cursor: pointer;
+background-color:  #33383b;
+border-radius: 2px;
+font-size: 16px;
+color: #ffffff;
+text-align: center;
+line-height: 30px;
+margin-right: 3px;
+margin-bottom: 5px;
+}
+
+.colonne-footer .icone-social img {
+
+height:25px;
+ width:25px;
+
+}
+
+
+
+.modulo {
+font-size: 10px;
+}
+
+.modulo input {
+font-size: 10px;
+}
+
+.contenutoPannelli {
+
+
+color: black;
+background-color:lightgray;
+ padding-top:5%;
+ padding-bottom: 20%;
+  font-size:60%;
+   align-content: center;
+
+
+ 
+}
+
+.contenutoPannelli .modulo  {
+
+   background-color: rgb(85, 85, 85);
+    padding-bottom:2%;
+   padding-top:2%;
+
+  height:120%;
+
+}
+
+
+.contenutoPannelli h1 {
+
+padding-top:15px;
+font-family:'Verdana';
+text-shadow:  1px 1px 3px black;
+font-weight: bold;
+ text-align:center;
+}
+
+.boxDescrizione {
+width: 100px;
+height: 70px;
+}
+
+
+#btnPannello {
+
+color:black;
+border-color: solid black; 
+background-color: orange;
+border-radius: 6px;
+margin-top:4%;
+margin-left:30%;
+width:100px;
+} 
+
+
+#btnTrasparente {
+
+background-color:transparent;
+border-color:transparent;
+box-shadow:transparent;
+color:orange;
+font-size:12px;
+height: 14px;
+ width: auto; 
+
+}
+
+
+}
+
+
+/*Qui di seguito il css con media query per gli schermi con dimensione tipica dei tablet*/
+
+@media screen and (max-width:768px)  {
+
+
+#benvenuto {
+  font-family:'Georgia';
+  text-shadow:  1px 1px 3px black;
+  font-weight: bold;
+  font-size:22px;
+  text-align:center;
+  padding-bottom:1%;
+  margin-bottom:3%;
+  }
+  
+  header {
+    color:white;
+    opacity:0.9;
+    border: none;
+      background-color: #292c2f;
+    box-shadow: 6px 6px 8px black;
+    color:black;
+
+    }
+
+/*regole di stile per la barra di navigazione*/
+nav {
+
+position: relative;
+  display: inline-block;
+ background-color: auto;
+padding-bottom:8%;
+ font-size:60%;
+margin-right:5%;
+margin-left:-10%;
+color:black;
+
+/*possibilità di animazione-> animation: slideIN 1s ease-out; */
+}
+
+nav ul {
+position: relative;
+color:white;
+display: flex;
+flex: 1 1 auto;
+margin: 0;
+list-style-type: none;
+
+}
+nav ul li:not(:last-child) {
+margin-right: 10px;
+}
+
+nav ul li {
+border: 2px solid transparent;
+border-radius: 5px;
+ transition: background 0.2s;
+height:8px;
+ padding-right:-20%;
+}
+nav ul li a {
+color: rgb(0, 0, 0);
+text-decoration: none;
+text-transform: uppercase;
+transition: color 0.4s;
+
+}
+nav ul li ul {
+visibility: hidden;
+opacity: 0;
+position: absolute;
+display: block;
+margin: 12px -12px;
+width: 105px;
+padding: 0;
+background: lightgray;
+border: 2px 1px 1px solid #000000;
+border-right: 1px solid #000000;
+border-bottom: 1px solid #000000;
+border-radius: 5px;
+transition: opacity 0.2s, visibility 0.2s;
+}
+nav ul li ul li {
+margin: -2px 0 0 -1px;
+width: calc(100% - 22px);
+line-height: 1.7;
+}
+nav ul li ul li a {
+color: rgb(0, 0, 0);
+}
+nav ul li:hover {
+ background: orange;
+border: 2px solid orange;
+border-right: 2px solid orange;
+border-bottom: 2px solid orange;
+}
+nav ul li:hover a {
+color: gray;
+}
+nav ul li:hover ul {
+visibility: visible;
+opacity: 1;
+box-shadow: 0px 2px 2px 2px orange;
+}
+
+nav ul li:hover ul li a {
+color: black;
+}
+
+
+.barraDiRicerca  { 
+
+align-content:right;
+text-align:right;
+margin-left:-4.5%;
+
+}
+
+nav .barraDiRicerca button {
+
+  position:relative;
+  margin-right:5px; 
+  margin-left:5px; 
+  border-color:orange;
+  box-shadow: #000000;
+  color: black;
+  text-decoration: none;
+  width: 40%;
+  margin-left:60%;
+  font-size:50%;
+
+
+ }
+
+  
+
+.barraDiRicerca  input  {
+ font-size:60%;
+ width: 50%;    
+ margin-left:60%;
+}
+ 
+ 
+
+
+.hero-image1 { 
+
+  height: 560px;
+  width: 50%;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+
+}
+
+.hero-image2 { 
+  
+  height: 560px;
+  width: 50%;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+}
+
+
+.hero-image3 { 
+
+  height: 560px;
+  width: 50%;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+}
+
+
+.hero-image4 { 
+
+  height: 560px;
+  width: 50%;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+}
+
+
+
+
+.contenutoBoxMenu p {
+
+  font-size:6px;
+
+ }
+
+ .contenutoBoxMenu a {
+  font-size:7px;
+  margin-bottom: 7px;
+  margin-top: 3px;
+
+}
+
+.contenutoBoxMenu h1 {
+
+  font-size:12px;
+
+
+}
+
+.contenutoBoxMenu h2 {
+  font-size: 8px;
+}
+
+.contenutoBoxMenu form {
+  font-size: 5px;
+}
+
+.contenutoBoxMenu label {
+  font-size: 5px;
+}
+
+.contenutoBoxMenu input {
+  font-size: 7px;
+}
+
+.contenutoBoxMenu button {
+  font-size: 5px;
+
+}
+
+.contenutoBoxMenu .cercaCittà {
+  margin-bottom: 1px;
+}
+
+.contenutoBoxMenu .button1 {
+  font-size: 3px;
+  left:15%;
+  width: 15%;
+  height: 3%;
+
+}
+
+
+
+
+.descrizioneSinistra p {
+
+  color:black;
+  font-size:12px;
+
+ 
+}
+
+.descrizioneDestra p {
+  
+  color:black;
+  font-size:12px;
+
+}
+
+
+.descrizioneSinistra h1 {
+  
+  color:black;
+  text-shadow:  1px 1px 3px 3px rgb(0, 0, 0);
+  font-size:14px;
+
+ }
+
+.descrizioneDestra h1 {
+  
+  color:black;
+  text-shadow:  1px 1px 3px 3px rgb(0, 0, 0);
+  font-size:14px;
+
+
+}
+
+
+
+.contenutoConferma {
+
+
+background:lightgrey;
+padding-top: 10%;
+PADDING-bottom:15%;
+font-size: 14px;
+
+}
+
+
+.contenutoConferma h1 {
+
+color:green;
+text-align:center;
+PADDING-bottom: 5%
+
+}
+
+.contenutoConferma p {
+
+
+text-align:center;
+
+
+}
+
+.contenutoConferma img {
+ align-content:center;
+display:block;
+margin: 0 auto ;
+height:180px;
+width:180px;
+
+
+}
+
+
+.contenutoErrore {
+
+text-align:center;
+background:lightgrey;
+padding-top: 6%;
+PADDING-bottom:12%;
+font-size: 20px;
+
+}
+
+
+.contenutoErrore h1 {
+
+color:red;
+text-align:center;
+padding-top: 5%;
+
+
+}
+
+
+
+.contenutoErrore h3 {
+
+color:red;
+text-align:center;
+padding-top: 5%;
+
+
+}
+
+.contenutoErrore p {
+
+   color:black;
+} 
+
+.contenutoErrore  p a {
+text-decoration:underline;
+color:gray;
+} 
+
+.contenutoErrore img {
+
+align-content:center;
+display:block;
+margin: 0 auto ;
+height:180px;
+width:180px;
+
+}
+
+
+
+
+#paginaContatti {
+background:lightgray;
+padding-top:1%;
+padding-bottom:15%;
+
+}
+
+#paginaContatti h1 {
+
+color:black;
+text-align:center;
+font-size:24px;
+font-weight: bold;
+font-family:'Georgia';
+padding-top:10%;
+text-shadow: 1px 1px 3px black;
+
+}
+
+#paginaContatti ion-icon {
+
+  color:black;
+ font-size:34px;
+  
+
+}
+
+#contattiSocial {
+
+ display:block;
+ align-content: center;
+ padding-left:8%;
+  padding-bottom: 12%;
+ margin-left:14%;
+ 
+
+}
+
+#contattiSocial ion-icon {
+color:black;
+font-size:40px;
+padding-right:3%;
+padding-left:8%;
+padding-top:3%;
+
+
+}
+
+#paginaContatti ul {
+ margin-left:10%;
+ 
+}
+
+
+#paginaContatti ul li {
+
+  color:black;
+ font-size:16px;
+text-align:left;
+letter-spacing:0.6px;
+padding-left:0.5%;
+padding-top:1%;
+padding-bottom:1%;
+
+}
+#paginaContatti ul li a {
+
+ color:gray;
+font-size:16px;
+text-align:left;
+letter-spacing:0.6px;
+padding-top:1%;
+padding-bottom:1%;
+
+}
+
+#paginaContatti a {
+
+ color:black;
+ font-size:10px;
+text-align:left;
+letter-spacing:0.6px;
+padding-left:0.5%;
+padding-top:1%;
+padding-bottom:1%;
+
+}
+
+
+#paginaMappa  {
+
+  text-align:center;
+  align-content:center;
+  display: block;background-color:lightgray;
+ padding: top 3%;
+ padding-bottom:5%;
+}
+
+#paginaMappa h1 {
+text-align:center;
+padding-top:1%;
+
+color:black;
+
+}
+
+#paginaMappa p {
+text-align:center;
+align-content:center;
+display: block;
+ color:black;
+
+}
+
+#mappa {
+
+  text-align:center;
+  align-content:center;
+  display: block;
+position:relative;
+ border: solid 5px black;
+ width:400px;
+ height:260px;
+ margin-left:16%;
+ margin-right:16%;
+ }
+
+iframe {
+   text-align:center;
+  align-content:center;
+  display: block;
+  width:400px;
+  height:260px;
+}
+
+footer{
+ 
+position: relative;
+ color:white;
+font-size:80%;
+
+
+}
+.colonne-footer{
+padding-top:10%;
+background-color: #292c2f;
+box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+box-sizing: border-box;
+width: 100%;
+text-align: left;
+font: bold 12px sans-serif;
+padding: 2% 2%;
+
+}
+
+#logoFooter {
+display: inline-block;
+position: relative;
+top: -5%;
+ border-radius: 6px;
+}
+
+#logoFooter {
+width: 55%;
+HEIGHT:40%;
+
+}
+
+.colonne-footer .colonna-sinistra,
+.colonne-footer .colonna-centrale,
+.colonne-footer .colonna-destra{
+display: inline-block;
+vertical-align: top;
+}
+
+.colonne-footer .colonna-sinistra{
+width: 30%;
+}
+
+.colonne-footer h3{
+color:  #ffffff;
+font: normal 26px 'Cookie', cursive;
+margin: 0;
+}
+
+.colonne-footer h3 span{
+color:  rgba(138, 125, 125, 0.947);
+}
+
+
+.colonne-footer .footer-links{
+color:  #ffffff;
+margin: 5% 0 3%;
+padding: 0;
+ 
+}
+
+.colonne-footer .footer-links a{
+display:inline-block;
+line-height: 1.8;
+text-decoration: none;
+color:  inherit;
+
+
+}
+
+.colonne-footer .footer-GEDAName{
+color:  #8f9296;
+font-size: 6px;
+font-weight: normal;
+margin: 0;
+}
+
+
+.colonne-footer .colonna-centrale{
+
+width: 30%;
+margin-left:4%;
+
+}
+
+.colonne-footer .colonna-centrale i{
+background-color:  #33383b;
+color: #ffffff;
+font-size: 16px;
+width: 15%;
+height: 20%;
+border-radius: 50%;
+text-align: center;
+line-height: 5%;
+margin: 3% 4%;
+vertical-align: middle;
+}
+
+.colonne-footer .colonna-centrale i.contatti{
+font-size: 8px;
+line-height: 26px;
+}
+
+.colonne-footer .colonna-centrale p{
+display: inline-block;
+color: #ffffff;
+vertical-align: middle;
+margin:0;
+}
+
+.colonne-footer .colonna-centrale p span{
+display:block;
+font-weight: normal;
+font-size:6px;
+line-height:2;
+}
+
+.colonne-footer .colonna-centrale p a{
+color:  rgba(135, 132, 132, 0.947);
+text-decoration: none;;
+}
+
+.colonne-footer .colonna-destra{
+width: 33%;
+  
+}
+
+.colonne-footer .footer-infoSuDiNoi{
+line-height: 16px;
+color:  #92999f;
+font-size: 5px;
+font-weight: normal;
+margin: 0;
+}
+
+.colonne-footer .footer-infoSuDiNoi span{
+display: block;
+color:  #ffffff;
+font-size: 6px;
+font-weight: bold;
+margin-bottom: 5%;
+}
+
+.colonne-footer .icone-social{
+margin-top: 5%;
+margin-left:40%;
+}
+
+.colonne-footer .icone-social a{
+display: block;
+width: 3%;
+height: 3%;
+cursor: pointer;
+background-color:  #33383b;
+border-radius: 2px;
+font-size: 12px;
+color: #ffffff;
+text-align: center;
+line-height: 26px;
+margin-right: 3px;
+margin-bottom: 5px;
+}
+
+.colonne-footer .icone-social img {
+
+height:20px;
+ width:20px;
+
+}
+
+
+.modulo {
+font-size: 7px;
+}
+
+.modulo input {
+font-size: 7px;
+}
+
+.contenutoPannelli {
+
+
+color: black;
+background-color:lightgray;
+ padding-top:5%;
+ padding-bottom: 20%;
+  font-size:50%;
+   align-content: center;
+
+
+ 
+}
+
+.contenutoPannelli .modulo  {
+
+   background-color: rgb(85, 85, 85);
+    padding-bottom:2%;
+   padding-top:2%;
+  height:120%;
+
+}
+
+
+.contenutoPannelli h1 {
+
+padding-top:15px;
+font-family:'Verdana';
+text-shadow:  1px 1px 3px black;
+font-weight: bold;
+ text-align:center;
+}
+
+.boxDescrizione {
+width: 100px;
+height: 70px;
+}
+
+
+#btnPannello {
+
+font-size:90%;
+color:black;
+border-color: solid black; 
+background-color: orange;
+border-radius: 6px;
+margin-top:4%;
+margin-left:25%;
+width:80px;
+} 
+
+
+#btnTrasparente {
+
+background-color:transparent;
+border-color:transparent;
+box-shadow:transparent;
+color:orange;
+font-size:8px;
+height: 12px;
+ width: auto; 
+
+}
+
+}
+
+
+@media screen and (max-width:480px)  {
+
+
+#benvenuto {
+  font-family:'Georgia';
+  text-shadow:  1px 1px 3px black;
+  font-weight: bold;
+  font-size:28px;
+  text-align:center;
+  padding-bottom:1%;
+  margin-bottom:3.5%;
+  }
+  
+  header {
+    color:white;
+    opacity:0.9;
+    border: none;
+      background-color: #292c2f;
+    box-shadow: 6px 6px 8px black;
+    color:black;
+    height:130px;
+    display: list-item;
+
+    }
+  
+/*regole di stile per la barra di navigazione*/
+
+
+nav {
+
+  position: relative;
+  background-color: auto;
+  font-size:0px;
+   color:black;
+   margin-left:10px; 
+  /*possibilità di animazione-> animation: slideIN 1s ease-out; */
+}
+
+nav ul li:not(:last-child) {
+margin-right: 10px;
+}
+
+nav ul li {
+border: 2px solid transparent;
+border-radius: 5px;
+ transition: background 0.2s;
+height:10px;
+  
+}
+nav ul li a {
+color: rgb(0, 0, 0);
+text-decoration: none;
+text-transform: uppercase;
+transition: color 0.4s;
+
+}
+
+nav ul li ul {
+ opacity: 0;
+position: absolute;
+ margin: 0px -10px;
+width: 70px;
+padding: 0px;
+background: lightgray;
+border: 2px 1px 1px solid #000000;
+border-right: 1px solid #000000;
+border-bottom: 1px solid #000000;
+border-radius: 5px;
+transition: opacity 0.2s, visibility 0.2s;
+}
+nav ul li ul li {
+margin: -2px 0 0 -1px;
+width: calc(100% - 22px);
+line-height: 1.7;
+}
+nav ul li ul li a {
+color: rgb(0, 0, 0);
+}
+nav ul li:hover {
+  height:12px;
+ background: orange;
+border: 2px solid orange;
+border-right: 2px solid orange;
+border-bottom: 2px solid orange;
+}
+nav ul li:hover a {
+  width:60px;
+  color: gray;
+}
+nav ul li:hover ul {
+visibility: visible;
+opacity: 1;
+box-shadow: 0px 2px 2px 2px orange;
+}
+nav ul li:hover ul li a {
+color: black;
+}
+
+
+
+nav ul li ion-icon {
+
+  margin-left:5px;
+  margin-right:5px;
+font-size: 24px;
+width: 20px; ;
+padding-right:8px;
+padding-right:8px;
+
+
+}
+
+.bottoneRicerca {
+  background-color:#292c2f;
+  margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+font-size: 0px;
+width: 0px;
+height: 0px;  
+border:transparent;
+background:transparent;
+color:transparent;
+}
+.bottoneRicerca li input .testo_nero {
+
+  width: 0px;
+  height: 0px;  
+  border:transparent;
+  background:transparent;
+  color:transparent;
+
+}
+
+.barraDiRicerca {
+  color:transparent;
+  border:transparent;
+  background:transparent;
+  background-color:#292c2f;
+  margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+font-size: 0px;
+width: 0px;
+height: 0px;  
+  
+}
+
+
+
+ .barraDiRicerca button {
+
+  
+  background-color:#292c2f;
+  margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+  font-size: 0px;
+  width: 0px;
+  height: 0px;  
+
+ }
+
+
+
+.barraDiRicerca  input  {
+
+   background-color:#292c2f;
+  margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+ font-size: 0px;
+ width: 0px;
+ height: 0px;  
+ }
+
+.hero-image1 { 
+
+  height: 400px;
+  width: 360px;
+   text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
+}
+
+.hero-image2 { 
+  
+  height: 400px;
+  width: 360px;
+   text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
+}
+
+
+.hero-image3 { 
+
+  height: 400px;
+  width: 360px;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+
+}
+
+
+.hero-image4 { 
+
+  height: 400px;
+  width: 360px;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+
+}
+
+.hero-text1 {
+  text-align: center;
+  left:50%;
+right:50%;
+  color: white;
+  text-decoration: none;
+}
+
+
+.hero-text2 {
+  text-align: center;
+margin-right:15%;
+  left:50%;
+  right:50%;
+  color: white;
+  text-decoration: none;
+}
+
+
+
+.hero-text3 {
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  color: white;
+  text-decoration: none;
+}
+
+
+
+.hero-text4 {
+  text-align: center;
+  
+  color: white;
+  text-decoration: none;
+}
+
+
+
+#slide {
+margin-top:0px;
+position:relative;
+  -webkit-transition: all 0.5s ease-out;
+ -moz-transition: left 0.5s ease-out;
+ -o-transition: left 0.5s ease-out;
+ transition: left 0.5s ease-out;
+ transition:opacity 0.5s;
+
+
+}
+
+
+
+
+#slide.fadeOut {
+
+opacity:0;
+
+}
+
+.boxMenu {
+  
+position:absolute;
+top:10%;
+right:10%;
+width: 50%;
+height:90%;
+background-color: #292c2f;
+box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+box-sizing: border-box;
+opacity: 0.6;
+margin-top:-5%;
+}
+
+.contenutoBoxMenu {
+position:absolute;
+top:10%;
+right:7%;
+width: 50%;
+height:90%;
+opacity: 100%;
+box-sizing: border-box;
+font-size: 14px;
+margin-top:-15%;
+}
+
+
+
+.contenutoBoxMenu p {
+
+font-size:0px;
+
+ }
+
+ .contenutoBoxMenu a {
+ 
+  margin-bottom: 7px;
+  margin-top: 3px;
+
+}
+
+.contenutoBoxMenu h1 {
+
+  margin-bottom:0px;
+  font-size: 14px;
+
+
+}
+
+.contenutoBoxMenu h2 {
+  font-size: 0px;
+  margin-top:5%;
+
+ }
+
+.contenutoBoxMenu form {
+  font-size: 14px;
+ 
+}
+
+.contenutoBoxMenu label {
+  font-size: 18px;
+ 
+
+}
+
+.contenutoBoxMenu input {
+   height: 24px;
+   width: 100px;
+   margin-top: -25%;
+
+}
+
+.contenutoBoxMenu .button {
+   height: 10px;
+  padding-top:5px; 
+  padding-bottom:25px;
+  text-align:center;
+  align-content: center;
+  font-size:14px;
+
+}
+
+.contenutoBoxMenu .cercaCittà {
+  margin-top:20px;
+   height: 24px;
+  width: 200px;
+font-size:14px;
+
+}
+
+.contenutoBoxMenu .button1 {
+  width: 0px;
+  height: 0px;
+   margin-left: 0px;
+  margin-top: 0px;
+}
+
+
+
+
+.contenutoBoxMenu .date {
+ }
+
+ .descrizioneSinistra {
+ 
+  }
+
+ .descrizioneDestra {
+
+  }
+
+
+.descrizioneSinistra p {
+
+  color:#000000;
+  font-size:14px;
+
+}
+
+.descrizioneDestra p {
+   color:black;
+  font-size:14px;
+
+}
+
+
+.descrizioneSinistra h1 {
+   color:black;
+  text-shadow:  1px 1px 3px 3px rgb(0, 0, 0);
+  font-size:14px;
+ 
+
+ }
+
+.descrizioneDestra h1 {
+   color:black;
+  text-shadow:  1px 1px 3px 3px rgb(0, 0, 0);
+  font-size:14px;
+
+ 
+
+}
+
+#box1 img {
+
+  border:1px solid black;
+  width: 27%;
+  height: 25%;
+  margin-top:20px;
+ margin-bottom:-5%;
+}
+
+
+#box2 img {
+
+border:1px solid black;
+width: 85%;
+height: auto;
+margin-top:20px;
+margin-bottom:-5%;
+
+}
+
+
+#box3 img {
+ 
+border:1px solid black;
+width: 27%;
+height: 65%;
+margin-top:20px;
+margin-bottom:-20px:
+
+}
+
+
+
+#box4 img {
+ 
+
+border:1px solid black;
+width: 85%;
+height: 90%;
+margin-top:5%;
+
+}
+
+
+.contenutoConferma {
+
+
+  background:lightgrey;
+ padding-top: 10%;
+ PADDING-bottom:15%;
+font-size:18px;
+
+}
+
+
+.contenutoConferma h1 {
+
+color:green;
+text-align:center;
+ PADDING-bottom: 7%
+
+}
+
+.contenutoConferma p {
+
+ 
+ text-align:center;
+  
+ 
+  }
+
+.contenutoConferma img {
+   align-content:center;
+ display:block;
+margin: 0 auto ;
+height:160px;
+width:160px;
+ 
+}
+
+
+.contenutoErrore {
+
+ text-align:center;
+  background:lightgrey;
+  padding-top: 10%;
+ PADDING-bottom:15%;
+ font-size:18px;
+
+
+}
+
+
+.contenutoErrore h1 {
+
+color:red;
+text-align:center;
+padding-top: 3%;
+ 
+
+}
+
+ 
+
+.contenutoErrore h3 {
+
+ color:red;
+ text-align:center;
+ padding-top: 3%;
+ 
+ 
+  }
+
+  .contenutoErrore p {
+
+     color:black;
+  } 
+
+  .contenutoErrore  p a {
+text-decoration:underline;
+color:gray;
+  } 
+  
+.contenutoErrore img {
+
+ align-content:center;
+ display:block;
+margin: 0 auto ;
+height:160px;
+width:160px;
+
+}
+
+
+
+#paginaContatti {
+  background:lightgray;
+  padding-top:1%;
+  padding-bottom:15%;
+  
+ }
+ 
+ #paginaContatti h1 {
+ 
+  color:black;
+ text-align:center;
+ font-size:24px;
+ font-weight: bold;
+ font-family:'Georgia';
+ padding-top:10%;
+ text-shadow: 1px 1px 3px black;
+  
+ }
+ 
+ #paginaContatti ion-icon {
+  
+    color:black;
+   font-size:28px;
+    
+ 
+ }
+ 
+ #contattiSocial {
+ 
+   display:block;
+   align-content: center;
+   padding-left:8%;
+    padding-bottom: 12%;
+   margin-left:10%;
+   
+ 
+ }
+ 
+ #contattiSocial ion-icon {
+  color:black;
+  font-size:28px;
+  padding-right:5%;
+  padding-left:8%;
+  padding-top:3%;
+ 
+  
+ }
+ 
+ #paginaContatti ul {
+   margin-left:-5%;
+   
+ }
+ 
+ 
+ #paginaContatti ul li {
+ 
+    color:black;
+   font-size:14px;
+ text-align:left;
+ letter-spacing:0.4px;
+ padding-left:0.5%;
+ padding-top:1%;
+ padding-bottom:1%;
+ 
+ }
+ #paginaContatti ul li a {
+ 
+   color:gray;
+  font-size:14px;
+ text-align:left;
+ letter-spacing:0.4px;
+  padding-top:1%;
+ padding-bottom:1%;
+ 
+ }
+ 
+ #paginaContatti a {
+ 
+   color:black;
+   font-size:10px;
+ text-align:left;
+ letter-spacing:0.4px;
+ padding-left:0.5%;
+ padding-top:1%;
+ padding-bottom:1%;
+ 
+ }
+ 
+#paginaMappa  {
+
+  text-align:center;
+  align-content:center;
+  display: block;background-color:lightgray;
+ padding: top 3%;
+ padding-bottom:5%;
+}
+
+#paginaMappa h1 {
+text-align:center;
+padding-top:1%;
+
+color:black;
+
+}
+
+#paginaMappa p {
+text-align:center;
+align-content:center;
+display: block;
+ color:black;
+
+}
+
+#mappa {
+
+  text-align:center;
+  align-content:center;
+  display: block;
+position:relative;
+ border: solid 5px black;
+ width:250px;
+  height:300px;
+ margin-left:15%;
+ margin-right:14%;
+ }
+
+iframe {
+   text-align:center;
+  align-content:center;
+  display: block;
+  width:250px;
+  height:300px;
+ }
+
+footer{
+position: relative;
+bottom: 0;
+color:white;
+font-size:10px;
+
+
+}
+.colonne-footer{
+background-color: #292c2f;
+box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+box-sizing: border-box;
+ text-align: left;
+ 
+}
+
+#logoFooter {
+display: inline-block;
+position: relative;
+  border-radius: 6px;
+}
+
+#logoFooter {
+width: 60%;
+HEIGHT:70%;
+padding-left:3%;
+
+}
+
+.colonne-footer .colonna-sinistra,
+.colonne-footer .colonna-destra{
+display: inline-block;
+vertical-align: top;
+}
+
+
+
+.colonne-footer .colonna-sinistra{
+width: 32%;
+margin-top: 6.5%;
+margin-left:0%;
+
+}
+
+.colonne-footer h3{
+color:  #ffffff;
+font: normal 20px 'Cookie', cursive;
+margin: 0;
+}
+
+.colonne-footer h3 span{
+color:  rgba(138, 125, 125, 0.947);
+}
+
+
+.colonne-footer .footer-links{
+color:  #ffffff;
+margin: 5% 0 3%;
+padding: 0;
+ 
+}
+
+.colonne-footer .footer-links a{
+display:inline-block;
+line-height: 1.8;
+text-decoration: none;
+color:  inherit;
+
+
+}
+
+.colonne-footer .footer-GEDAName{
+color:  #8f9296;
+ margin: 0;
+}
+
+
+.colonne-footer .colonna-centrale{
+
+width: 25%;
+ 
+}
+
+.colonne-footer .colonna-centrale i{
+background-color:  #33383b;
+color: #ffffff;
+font-size: 12px;
+width: 0%;
+height: 20%;
+border-radius: 50%;
+text-align: center;
+line-height: 5%;
+ vertical-align: middle;
+}
+
+.colonne-footer .colonna-centrale i.contatti{
+ line-height: 20px;
+}
+
+.colonne-footer .colonna-centrale p{
+display: inline-block;
+color: #ffffff;
+vertical-align: middle;
+margin:0;
+}
+
+.colonne-footer .colonna-centrale p span{
+display:block;
+font-weight: normal;
+ line-height:2;
+}
+
+.colonne-footer .colonna-centrale p a{
+color:  rgba(135, 132, 132, 0.947);
+text-decoration: none;;
+}
+
+.colonne-footer .colonna-destra{
+width: 30%;
+  
+}
+
+.colonne-footer .colonna-destra h4{
+
+margin-left:15%;
+  
+}
+
+
+.colonne-footer .footer-infoSuDiNoi{
+line-height: 16px;
+color:  #92999f;
+ font-weight: normal;
+margin: 0;
+}
+
+.colonne-footer .footer-infoSuDiNoi span{
+display: block;
+color:  #ffffff;
+ font-weight: bold;
+margin-bottom: 5%;
+}
+
+.colonne-footer .icone-social{
+margin-top: 5%;
+margin-left:40%;
+}
+
+.colonne-footer .icone-social a{
+ width: 3%;
+height: 3%;
+cursor: pointer;
+background-color:  #33383b;
+border-radius: 2px;
+ color: #ffffff;
+text-align: center;
+line-height: 22px;
+margin-left:35%;
+
+}
+
+.colonne-footer .icone-social img {
+
+height:25px;
+ width:25px;
+ padding-right:2%;
+ padding-left:2%;
+
+
+
+}
+
+
+
+
+.contenutoPannelli {
+
+font-size:16px;
+color: black;
+background-color:lightgray;
+ padding-top:5%;
+ padding-bottom: 20%;
+    align-content: center;
+    display:block;
+
+
+ 
+}
+
+.contenutoPannelli .modulo  {
+
+   background-color: rgb(85, 85, 85);
+    padding-bottom:2%;
+   padding-top:2%;
+  height:120%;
+  width:200px;
+  margin-left:45px;
+   padding-left:10%;
+  padding-right:10%;
+  font-size: 14px;
+  text-align:center;
+align-content: center;
+display:block;
+ 
+}
+
+
+.contenutoPannelli h1 {
+
+padding-top:15px;
+font-family:'Verdana';
+text-shadow:  1px 1px 3px black;
+font-weight: bold;
+ text-align:center;
+}
+
+
+.contenutoPannelli input {
+ height:25px;
+ width:200px;
+ font-size:16px;
+
+}
+
+#allegaFile {
+
+font-size:10px:
+}
+ 
+
+.boxDescrizione {
+width: 100px;
+height: 70px;
+}
+
+
+#btnPannello {
+
+color:black;
+border-color: solid black; 
+background-color: orange;
+border-radius: 6px;
+margin-top:4%;
+width:90px;
+align-content: center;
+display:block;
+} 
+
+
+}
